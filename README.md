@@ -1,6 +1,6 @@
-# 💇‍♀️ Salon de Coiffure – Full Stack Web Application
+# 💇‍♀️ Salon de Coiffure – Full Stack Web Site
 
-A complete **full-stack web site** designed for a beauty & hair salon, built using modern web fundamentals.  
+A complete **full-stack web site** designed for a beauty & hair salon, built using web fundamentals technologies . 
 The system includes a **client interface** and a full **admin dashboard** for managing services, reservations, clients, and salon staff.
 
 
@@ -94,8 +94,10 @@ Accessible only after successful admin login.
 
 
 🧩 Installation Guide
+
 1️⃣ Clone the Repository
 git clone https://github.com/lizamezioug/Site-salon-de-coiffure.git
+
 cd Site-salon-de-coiffure
 
 2️⃣ Extract the Source Code
@@ -105,15 +107,14 @@ Inside the repository, extract:
 Site-salon-de-coiffure.zip
 
 
-This reveals the complete project (frontend + backend + assets).
 
 🗄️ Database Setup
+
 1️⃣ Open phpMyAdmin
+
 2️⃣ Create a new database
 
-Example:
-
-salon_de_coiffure
+Example: salon_de_coiffure
 
 3️⃣ Import the SQL file
 
@@ -124,34 +125,38 @@ salon_de_coiffure.sql
 
 This will automatically create:
 
-all tables
+all tables ,  relations and initial  data
 
-relations
-
-initial sample data
-
-✔ No manual setup needed
-✔ The project is ready to run
 
 🔧 PHP Database Configuration (config.php)
+
 
 All PHP scripts connect through a single configuration file:
 
 📌 php/config.php
 
 <?php
+
 $servername = "localhost";
+
 $username = "root";
+
 $password = "";
+
 $dbname = "salon_de_coiffure";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
+
     http_response_code(500);
+    
     echo json_encode(['error' => 'La connexion a échoué: ' . $conn->connect_error]);
+    
     exit();
+    
 }
+
 ?>
 
 
