@@ -106,8 +106,6 @@ Accessible only after successful admin login.
 
 git clone https://github.com/lizamezioug/Site-salon-de-coiffure.git
 
-cd Site-salon-de-coiffure
-
 
 cd Site-salon-de-coiffure
 
