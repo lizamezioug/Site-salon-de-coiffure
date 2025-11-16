@@ -145,28 +145,20 @@ All PHP scripts connect through a single configuration file:
 📌 php/config.php
 
 <?php
-
 $servername = "localhost";
-
 $username = "root";
-
 $password = "";
-
 $dbname = "salon_de_coiffure";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
-
     http_response_code(500);
-    
     echo json_encode(['error' => 'La connexion a échoué: ' . $conn->connect_error]);
-    
     exit();
-    
 }
-
 ?>
+
 
 
 ➡️ Only modify:
@@ -194,7 +186,9 @@ XAMPP
 LAMP
 
 2️⃣ Move the extracted folder into your server directory
+
 www/     (WAMP)
+
 
 htdocs/  (XAMPP)
 
