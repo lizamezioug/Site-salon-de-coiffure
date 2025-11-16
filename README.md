@@ -84,12 +84,19 @@ Accessible only after successful admin login.
 ## 📂 Project Structure
 
 /Site-salon-de-coiffure.zip → contains all source code:
+
 /css
+
 /html
+
 /js
+
 /php
+
 /uploads
+
 ...
+
 /salon_de_coiffure.sql → Database export (full schema + data)
 
 
@@ -98,6 +105,7 @@ Accessible only after successful admin login.
 1️⃣ Clone the Repository
 
 git clone https://github.com/lizamezioug/Site-salon-de-coiffure.git
+
 cd Site-salon-de-coiffure
 
 
@@ -176,6 +184,7 @@ if your environment requires different credentials.
 All other PHP files automatically include this configuration — nothing else to change.
 
 ▶️ Running the Project
+
 1️⃣ Start your local server
 
 Compatible with:
@@ -188,9 +197,11 @@ LAMP
 
 2️⃣ Move the extracted folder into your server directory
 www/     (WAMP)
+
 htdocs/  (XAMPP)
 
 3️⃣ Launch the site
+
 http://localhost/Salon-de-coiffure/
 
 📮 Email Notifications (PHPMailer)
